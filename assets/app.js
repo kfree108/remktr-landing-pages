@@ -446,7 +446,7 @@ function variant() {
 
 function cta(label = "Book your fit call", type = "primary") {
   const url = window.REMKTR_TRACKING?.bookingUrl || "https://calendly.com/jayce-remktr/30min";
-  return `<a class="button ${type}" href="${url}" target="_blank" rel="noopener" data-cta="${label}">${label}</a>`;
+  return `<a class="button ${type}" href="${url}" data-calendly-popup data-cta="${label}">${label}</a>`;
 }
 
 function ensureCalendlyAssets() {
@@ -456,11 +456,31 @@ function ensureCalendlyAssets() {
   css.rel = "stylesheet";
   css.href = "https://assets.calendly.com/assets/external/widget.css";
   document.head.appendChild(css);
+}
+
+let calendlyWidgetPromise;
+function loadCalendlyWidget() {
+  ensureCalendlyAssets();
+  if (window.Calendly && typeof window.Calendly.initPopupWidget === "function") {
+    return Promise.resolve(window.Calendly);
+  }
+  if (calendlyWidgetPromise) return calendlyWidgetPromise;
+  calendlyWidgetPromise = new Promise((resolve, reject) => {
+    const existing = document.getElementById("calendly-widget-js");
+    if (existing) {
+      existing.addEventListener("load", () => resolve(window.Calendly), { once: true });
+      existing.addEventListener("error", reject, { once: true });
+      return;
+    }
   const js = document.createElement("script");
   js.id = "calendly-widget-js";
   js.async = true;
   js.src = "https://assets.calendly.com/assets/external/widget.js";
+    js.onload = () => resolve(window.Calendly);
+    js.onerror = reject;
   document.head.appendChild(js);
+  });
+  return calendlyWidgetPromise;
 }
 
 function calendlyUrlWithUtms(baseUrl) {
@@ -490,22 +510,26 @@ document.addEventListener("click", event => {
   // Calendly embeds require an HTTPS host page. On plain http (local preview),
   // fall through to the normal link, which opens Calendly in a new tab.
   if (window.location.protocol !== "https:") return;
-  if (window.Calendly && typeof window.Calendly.initPopupWidget === "function") {
-    event.preventDefault();
-    const url = calendlyUrlWithUtms(link.href);
+  event.preventDefault();
+  const url = calendlyUrlWithUtms(link.href);
+  loadCalendlyWidget().then(calendly => {
+    if (!calendly || typeof calendly.initPopupWidget !== "function") {
+      window.open(url, "_blank", "noopener");
+      return;
+    }
     calendlyEmbedConfirmed = false;
-    window.Calendly.initPopupWidget({ url });
+    calendly.initPopupWidget({ url });
     // Safety net: if the embed never phones home, close the spinner and
     // open Calendly in a new tab instead so the lead is never lost.
     setTimeout(() => {
       if (!calendlyEmbedConfirmed) {
-        if (typeof window.Calendly.closePopupWidget === "function") {
-          try { window.Calendly.closePopupWidget(); } catch (e) { /* noop */ }
+        if (typeof calendly.closePopupWidget === "function") {
+          try { calendly.closePopupWidget(); } catch (e) { /* noop */ }
         }
         window.open(url, "_blank", "noopener");
       }
     }, 4000);
-  }
+  }).catch(() => window.open(url, "_blank", "noopener"));
 });
 
 function videoEl(item, className = "") {
