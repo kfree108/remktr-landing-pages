@@ -2748,18 +2748,18 @@ body.show-variant .variant-note { display: block; }
 body.streaming:not(.shopify-offer) {
   --cosmic: #5b53ff;
   --indigo: #5b53ff;
-  background: #fffaf0;
-  color: #111111;
+  background: #f7f1ff;
+  color: #131015;
 }
 
 body.streaming:not(.shopify-offer) .nav {
-  background: rgba(255, 255, 255, .86);
+  background: rgba(255, 255, 255, .9);
   border-bottom-color: rgba(17, 17, 17, .1);
 }
 
 body.streaming:not(.shopify-offer) .brand-logo-main,
 body.streaming:not(.shopify-offer) .nav-links {
-  color: #111111;
+  color: #131015;
 }
 
 body.streaming:not(.shopify-offer) .brand-logo-re,
@@ -2775,6 +2775,7 @@ body.streaming:not(.shopify-offer) .proof-media-label span,
 body.streaming:not(.shopify-offer) .proof-flow span,
 body.streaming:not(.shopify-offer) .proof-compare span,
 body.streaming:not(.shopify-offer) .logo-band-label,
+body.streaming:not(.shopify-offer) .client-logo-copy span,
 body.streaming:not(.shopify-offer) .hero-mechanics span,
 body.streaming:not(.shopify-offer) .process-number span,
 body.streaming:not(.shopify-offer) .process-beats span,
@@ -2787,7 +2788,7 @@ body.streaming:not(.shopify-offer) .faq-featured span {
 body.streaming:not(.shopify-offer) .button.primary {
   background: #fccc00;
   border-color: #fccc00;
-  color: #111111;
+  color: #342a00;
 }
 
 body.streaming:not(.shopify-offer) .hero-offer-strip span::before,
@@ -2797,14 +2798,15 @@ body.streaming:not(.shopify-offer) .streaming .check::before {
 
 body.streaming:not(.shopify-offer) .hero {
   background:
-    radial-gradient(circle at 72% 18%, rgba(91, 83, 255, .22), transparent 29%),
-    linear-gradient(135deg, #fffaf0 0%, #ffffff 54%, #f5e8ff 100%);
+    radial-gradient(circle at 72% 18%, rgba(245, 232, 255, .95), transparent 31%),
+    radial-gradient(circle at 18% 22%, rgba(252, 204, 0, .16), transparent 28%),
+    linear-gradient(135deg, #f7f1ff 0%, #ffffff 56%, #f5e8ff 100%);
 }
 
 body.streaming:not(.shopify-offer) .hero-background-video::after {
   background:
-    linear-gradient(90deg, rgba(255, 250, 240, .92) 0%, rgba(255, 250, 240, .74) 32%, rgba(255, 250, 240, .2) 68%, rgba(255, 250, 240, .02) 100%),
-    linear-gradient(180deg, rgba(255, 250, 240, .2), rgba(255, 250, 240, .58));
+    linear-gradient(90deg, rgba(247, 241, 255, .9) 0%, rgba(247, 241, 255, .64) 33%, rgba(247, 241, 255, .16) 68%, rgba(247, 241, 255, .02) 100%),
+    linear-gradient(180deg, rgba(255, 255, 255, .08), rgba(247, 241, 255, .38));
 }
 
 body.streaming:not(.shopify-offer) .hero h1,
@@ -2816,7 +2818,7 @@ body.streaming:not(.shopify-offer) .reporting-copy h2,
 body.streaming:not(.shopify-offer) .objection-header h2,
 body.streaming:not(.shopify-offer) .faq-heading h2,
 body.streaming:not(.shopify-offer) .quote-band h2 {
-  color: #111111;
+  color: #131015;
 }
 
 body.streaming:not(.shopify-offer) .hero p,
@@ -2827,7 +2829,11 @@ body.streaming:not(.shopify-offer) .featured-copy p,
 body.streaming:not(.shopify-offer) .reporting-copy p,
 body.streaming:not(.shopify-offer) .objection-header p,
 body.streaming:not(.shopify-offer) .faq-heading p {
-  color: #565656;
+  color: #4a404e;
+}
+
+body.streaming:not(.shopify-offer) .quote-band p {
+  color: #4a404e;
 }
 
 body.streaming:not(.shopify-offer) .section.alt,
@@ -2835,6 +2841,16 @@ body.streaming:not(.shopify-offer) .streaming-logo-band,
 body.streaming:not(.shopify-offer) .creative-wall {
   background: #ffffff;
   border-color: rgba(17, 17, 17, .1);
+}
+
+body.streaming:not(.shopify-offer) .hero-platform-strip,
+body.streaming:not(.shopify-offer) .client-logo-band {
+  background: rgba(255, 255, 255, .78);
+  border-color: rgba(17, 17, 17, .1);
+}
+
+body.streaming:not(.shopify-offer) .client-logo-copy b {
+  color: #131015;
 }
 
 body.streaming:not(.shopify-offer) .featured-reel,
@@ -2846,7 +2862,7 @@ body.streaming:not(.shopify-offer) .objection-strip details,
 body.streaming:not(.shopify-offer) .faq-featured article,
 body.streaming:not(.shopify-offer) .faq-compact details,
 body.streaming:not(.shopify-offer) .booking-dock {
-  background: rgba(255, 255, 255, .9);
+  background: rgba(255, 255, 255, .92);
   border-color: rgba(17, 17, 17, .12);
 }
 
@@ -2857,9 +2873,9 @@ body.streaming:not(.shopify-offer) .case-metrics b,
 body.streaming:not(.shopify-offer) .case-delivery b,
 body.streaming:not(.shopify-offer) .measurement-pills b,
 body.streaming:not(.shopify-offer) .reporting-bullets span {
-  background: #fffaf0;
+  background: #f7f1ff;
   border-color: rgba(17, 17, 17, .12);
-  color: #111111;
+  color: #131015;
 }
 
 body.streaming:not(.shopify-offer) .metric-stack dd,
@@ -2871,7 +2887,7 @@ body.streaming:not(.shopify-offer) .objection-strip summary b,
 body.streaming:not(.shopify-offer) .faq-featured h3,
 body.streaming:not(.shopify-offer) .faq-compact summary,
 body.streaming:not(.shopify-offer) .booking-dock b {
-  color: #111111;
+  color: #131015;
 }
 
 body.streaming:not(.shopify-offer) .metric-stack dt,
@@ -2882,7 +2898,7 @@ body.streaming:not(.shopify-offer) .case-metrics small,
 body.streaming:not(.shopify-offer) .case-delivery small,
 body.streaming:not(.shopify-offer) .booking-dock span,
 body.streaming:not(.shopify-offer) .footer {
-  color: #666666;
+  color: #6f6474;
 }
 
 body.streaming:not(.shopify-offer) .creative-insight dd,
@@ -2894,13 +2910,13 @@ body.streaming:not(.shopify-offer) .proof-compare p,
 body.streaming:not(.shopify-offer) .objection-strip p,
 body.streaming:not(.shopify-offer) .faq-featured p,
 body.streaming:not(.shopify-offer) .faq-compact p {
-  color: #565656 !important;
+  color: #4a404e !important;
 }
 
 body.streaming:not(.shopify-offer) .quote-band {
   background:
     radial-gradient(circle at 90% 12%, rgba(245, 232, 255, .95), transparent 34%),
-    linear-gradient(135deg, #fffaf0, #ffffff);
+    linear-gradient(135deg, #f7f1ff, #ffffff);
   border-color: rgba(17, 17, 17, .12);
 }
 
