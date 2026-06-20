@@ -2742,3 +2742,176 @@ body.show-variant .variant-note { display: block; }
   }
   .booking-dock .button { width: 100%; }
 }
+
+/* reMKTR color skin for the original streaming page.
+   This keeps the existing layout, spacing, videos, and section structure. */
+body.streaming:not(.shopify-offer) {
+  --cosmic: #5b53ff;
+  --indigo: #5b53ff;
+  background: #fffaf0;
+  color: #111111;
+}
+
+body.streaming:not(.shopify-offer) .nav {
+  background: rgba(255, 255, 255, .86);
+  border-bottom-color: rgba(17, 17, 17, .1);
+}
+
+body.streaming:not(.shopify-offer) .brand-logo-main,
+body.streaming:not(.shopify-offer) .nav-links {
+  color: #111111;
+}
+
+body.streaming:not(.shopify-offer) .brand-logo-re,
+body.streaming:not(.shopify-offer) .eyebrow,
+body.streaming:not(.shopify-offer) .hero-accent,
+body.streaming:not(.shopify-offer) .section-kicker,
+body.streaming:not(.shopify-offer) .player-overlay span,
+body.streaming:not(.shopify-offer) .featured-copy span,
+body.streaming:not(.shopify-offer) .wall-header span,
+body.streaming:not(.shopify-offer) .creative-copy span,
+body.streaming:not(.shopify-offer) .creative-overlay span,
+body.streaming:not(.shopify-offer) .proof-media-label span,
+body.streaming:not(.shopify-offer) .proof-flow span,
+body.streaming:not(.shopify-offer) .proof-compare span,
+body.streaming:not(.shopify-offer) .logo-band-label,
+body.streaming:not(.shopify-offer) .hero-mechanics span,
+body.streaming:not(.shopify-offer) .process-number span,
+body.streaming:not(.shopify-offer) .process-beats span,
+body.streaming:not(.shopify-offer) .objection-strip summary span,
+body.streaming:not(.shopify-offer) .faq-heading span,
+body.streaming:not(.shopify-offer) .faq-featured span {
+  color: #5b53ff;
+}
+
+body.streaming:not(.shopify-offer) .button.primary {
+  background: #fccc00;
+  border-color: #fccc00;
+  color: #111111;
+}
+
+body.streaming:not(.shopify-offer) .hero-offer-strip span::before,
+body.streaming:not(.shopify-offer) .streaming .check::before {
+  background: #fccc00;
+}
+
+body.streaming:not(.shopify-offer) .hero {
+  background:
+    radial-gradient(circle at 72% 18%, rgba(91, 83, 255, .22), transparent 29%),
+    linear-gradient(135deg, #fffaf0 0%, #ffffff 54%, #f5e8ff 100%);
+}
+
+body.streaming:not(.shopify-offer) .hero-background-video::after {
+  background:
+    linear-gradient(90deg, rgba(255, 250, 240, .92) 0%, rgba(255, 250, 240, .74) 32%, rgba(255, 250, 240, .2) 68%, rgba(255, 250, 240, .02) 100%),
+    linear-gradient(180deg, rgba(255, 250, 240, .2), rgba(255, 250, 240, .58));
+}
+
+body.streaming:not(.shopify-offer) .hero h1,
+body.streaming:not(.shopify-offer) .section h2,
+body.streaming:not(.shopify-offer) .wall-header h2,
+body.streaming:not(.shopify-offer) .featured-copy h3,
+body.streaming:not(.shopify-offer) .case-study-grid h3,
+body.streaming:not(.shopify-offer) .reporting-copy h2,
+body.streaming:not(.shopify-offer) .objection-header h2,
+body.streaming:not(.shopify-offer) .faq-heading h2,
+body.streaming:not(.shopify-offer) .quote-band h2 {
+  color: #111111;
+}
+
+body.streaming:not(.shopify-offer) .hero p,
+body.streaming:not(.shopify-offer) .microcopy,
+body.streaming:not(.shopify-offer) .section-copy,
+body.streaming:not(.shopify-offer) .wall-header p,
+body.streaming:not(.shopify-offer) .featured-copy p,
+body.streaming:not(.shopify-offer) .reporting-copy p,
+body.streaming:not(.shopify-offer) .objection-header p,
+body.streaming:not(.shopify-offer) .faq-heading p {
+  color: #565656;
+}
+
+body.streaming:not(.shopify-offer) .section.alt,
+body.streaming:not(.shopify-offer) .streaming-logo-band,
+body.streaming:not(.shopify-offer) .creative-wall {
+  background: #ffffff;
+  border-color: rgba(17, 17, 17, .1);
+}
+
+body.streaming:not(.shopify-offer) .featured-reel,
+body.streaming:not(.shopify-offer) .creative-card,
+body.streaming:not(.shopify-offer) .case-study-grid article,
+body.streaming:not(.shopify-offer) .proof-flow div,
+body.streaming:not(.shopify-offer) .proof-compare div,
+body.streaming:not(.shopify-offer) .objection-strip details,
+body.streaming:not(.shopify-offer) .faq-featured article,
+body.streaming:not(.shopify-offer) .faq-compact details,
+body.streaming:not(.shopify-offer) .booking-dock {
+  background: rgba(255, 255, 255, .9);
+  border-color: rgba(17, 17, 17, .12);
+}
+
+body.streaming:not(.shopify-offer) .metric-stack div,
+body.streaming:not(.shopify-offer) .creative-context div,
+body.streaming:not(.shopify-offer) .featured-metrics div,
+body.streaming:not(.shopify-offer) .case-metrics b,
+body.streaming:not(.shopify-offer) .case-delivery b,
+body.streaming:not(.shopify-offer) .measurement-pills b,
+body.streaming:not(.shopify-offer) .reporting-bullets span {
+  background: #fffaf0;
+  border-color: rgba(17, 17, 17, .12);
+  color: #111111;
+}
+
+body.streaming:not(.shopify-offer) .metric-stack dd,
+body.streaming:not(.shopify-offer) .creative-context dd,
+body.streaming:not(.shopify-offer) .featured-metrics strong,
+body.streaming:not(.shopify-offer) .proof-flow b,
+body.streaming:not(.shopify-offer) .proof-compare b,
+body.streaming:not(.shopify-offer) .objection-strip summary b,
+body.streaming:not(.shopify-offer) .faq-featured h3,
+body.streaming:not(.shopify-offer) .faq-compact summary,
+body.streaming:not(.shopify-offer) .booking-dock b {
+  color: #111111;
+}
+
+body.streaming:not(.shopify-offer) .metric-stack dt,
+body.streaming:not(.shopify-offer) .creative-context dt,
+body.streaming:not(.shopify-offer) .featured-metrics span,
+body.streaming:not(.shopify-offer) .creative-insight dt,
+body.streaming:not(.shopify-offer) .case-metrics small,
+body.streaming:not(.shopify-offer) .case-delivery small,
+body.streaming:not(.shopify-offer) .booking-dock span,
+body.streaming:not(.shopify-offer) .footer {
+  color: #666666;
+}
+
+body.streaming:not(.shopify-offer) .creative-insight dd,
+body.streaming:not(.shopify-offer) .case-study-grid p,
+body.streaming:not(.shopify-offer) .case-study-note,
+body.streaming:not(.shopify-offer) .creative-disclaimer,
+body.streaming:not(.shopify-offer) .proof-flow p,
+body.streaming:not(.shopify-offer) .proof-compare p,
+body.streaming:not(.shopify-offer) .objection-strip p,
+body.streaming:not(.shopify-offer) .faq-featured p,
+body.streaming:not(.shopify-offer) .faq-compact p {
+  color: #565656 !important;
+}
+
+body.streaming:not(.shopify-offer) .quote-band {
+  background:
+    radial-gradient(circle at 90% 12%, rgba(245, 232, 255, .95), transparent 34%),
+    linear-gradient(135deg, #fffaf0, #ffffff);
+  border-color: rgba(17, 17, 17, .12);
+}
+
+body.streaming:not(.shopify-offer) .hero-mechanics b,
+body.streaming:not(.shopify-offer) .hero-mechanics p,
+body.streaming:not(.shopify-offer) .player-overlay strong,
+body.streaming:not(.shopify-offer) .proof-media-label b,
+body.streaming:not(.shopify-offer) .process-number strong,
+body.streaming:not(.shopify-offer) .process-number p,
+body.streaming:not(.shopify-offer) .cutdown-card span,
+body.streaming:not(.shopify-offer) .creative-overlay h3,
+body.streaming:not(.shopify-offer) .creative-duration {
+  color: #ffffff;
+}
