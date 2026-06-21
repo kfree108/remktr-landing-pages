@@ -2746,8 +2746,8 @@ body.show-variant .variant-note { display: block; }
 /* reMKTR color skin for the original streaming page.
    This keeps the existing layout, spacing, videos, and section structure. */
 body.streaming:not(.shopify-offer) {
-  --cosmic: #5b53ff;
-  --indigo: #5b53ff;
+  --cosmic: #4f46e5;
+  --indigo: #4f46e5;
   background: #f7f1ff;
   color: #131015;
 }
@@ -2782,7 +2782,7 @@ body.streaming:not(.shopify-offer) .process-beats span,
 body.streaming:not(.shopify-offer) .objection-strip summary span,
 body.streaming:not(.shopify-offer) .faq-heading span,
 body.streaming:not(.shopify-offer) .faq-featured span {
-  color: #5b53ff;
+  color: #4f46e5;
 }
 
 body.streaming:not(.shopify-offer) .button.primary {
@@ -2805,8 +2805,8 @@ body.streaming:not(.shopify-offer) .hero {
 
 body.streaming:not(.shopify-offer) .hero-background-video::after {
   background:
-    linear-gradient(90deg, rgba(247, 241, 255, .9) 0%, rgba(247, 241, 255, .64) 33%, rgba(247, 241, 255, .16) 68%, rgba(247, 241, 255, .02) 100%),
-    linear-gradient(180deg, rgba(255, 255, 255, .08), rgba(247, 241, 255, .38));
+    linear-gradient(90deg, rgba(247, 241, 255, .96) 0%, rgba(247, 241, 255, .74) 34%, rgba(247, 241, 255, .22) 68%, rgba(247, 241, 255, .04) 100%),
+    linear-gradient(180deg, rgba(255, 255, 255, .12), rgba(247, 241, 255, .42));
 }
 
 body.streaming:not(.shopify-offer) .hero h1,
