@@ -2924,10 +2924,53 @@ body.streaming:not(.shopify-offer) .hero-mechanics b,
 body.streaming:not(.shopify-offer) .hero-mechanics p,
 body.streaming:not(.shopify-offer) .player-overlay strong,
 body.streaming:not(.shopify-offer) .proof-media-label b,
-body.streaming:not(.shopify-offer) .process-number strong,
-body.streaming:not(.shopify-offer) .process-number p,
 body.streaming:not(.shopify-offer) .cutdown-card span,
 body.streaming:not(.shopify-offer) .creative-overlay h3,
 body.streaming:not(.shopify-offer) .creative-duration {
   color: #ffffff;
+}
+
+body.streaming:not(.shopify-offer) .process-beats div {
+  background: rgba(255, 255, 255, .94);
+  border-color: rgba(17, 17, 17, .12);
+}
+
+body.streaming:not(.shopify-offer) .process-beats h3,
+body.streaming:not(.shopify-offer) .process-number strong {
+  color: #131015;
+}
+
+body.streaming:not(.shopify-offer) .process-beats p,
+body.streaming:not(.shopify-offer) .process-number p {
+  color: #4a404e;
+}
+
+body.streaming:not(.shopify-offer) .day-strip {
+  border-color: rgba(17, 17, 17, .12);
+  background: rgba(17, 17, 17, .12);
+}
+
+body.streaming:not(.shopify-offer) .featured-metrics {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+body.streaming:not(.shopify-offer) .featured-metrics div {
+  padding: 10px 11px;
+}
+
+body.streaming:not(.shopify-offer) .featured-metrics div:last-child {
+  grid-column: 1 / -1;
+}
+
+body.streaming:not(.shopify-offer) .featured-metrics span {
+  font-size: 9px;
+  letter-spacing: .06em;
+}
+
+body.streaming:not(.shopify-offer) .featured-metrics strong {
+  font-size: clamp(22px, 1.85vw, 30px);
+}
+
+body.streaming:not(.shopify-offer) .creative-media video {
+  object-position: center 38%;
 }
