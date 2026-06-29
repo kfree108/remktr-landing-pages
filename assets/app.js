@@ -156,7 +156,7 @@ const offers = {
       ["No creative?", "We make it. Creative is completely included, free, and built into the one-week launch timeline. After the first meeting, we map the brand, audience, offer, and proof points, then produce multiple on-brand concepts and cutdowns designed to test different hooks. You are not buying one generic video. You are getting a small creative system built for your brand and measured against real sales outcomes."],
       ["Too expensive?", "Premium streaming starts at just $10,000 per month in media spend. Our management fee is 10% of spend, so the economics stay simple and aligned. The goal is to make streaming accessible without turning it into a bloated TV production or a long agency commitment."],
       ["Can we prove sales?", "Yes. We use Amazon Marketing Cloud and Amazon attribution signals to connect exposed households to downstream shopping behavior, purchases, and new-to-brand outcomes where Amazon can measure the path. Streaming platforms show delivery, reach, frequency, and placement performance. AMC gives us the sales layer, so the campaign is judged by what happened after the impression, not just whether the ad ran."],
-      ["What is SignalForge?", "SignalForge is our AI media engine. It watches placement performance, audience response, spend pace, ROAS, CPM, and sales signals, then pushes budget toward what is working and pulls back when a placement stops earning its keep. It is built to protect spend in real time instead of waiting for a post-campaign report."],
+      ["What is TargetLock?", "TargetLock is our AI media engine. It watches placement performance, audience response, spend pace, ROAS, CPM, and sales signals, then pushes budget toward what is working and pulls back when a placement stops earning its keep. It is built to protect spend in real time instead of waiting for a post-campaign report."],
       ["Where do the ads run?", "We run premium streaming placements across services such as Prime Video, Disney+, Hulu, ESPN, and Netflix. The placement mix depends on your audience and campaign plan. Sales attribution is powered through Amazon Marketing Cloud and Amazon shopping signals, so we can connect premium-screen exposure to Amazon-attributed purchases, new customers, and measurable sales impact."]
     ],
     final: "Get the presence of TV with the operating discipline of paid media."
@@ -845,7 +845,7 @@ function streamingProcess() {
     <div class="process-beats">
       <div><span>01</span><h3>Meet.</h3><p>We learn your brand, offer, audience, and the shoppers worth reaching.</p></div>
       <div><span>02</span><h3>Create.</h3><p>Our professional creative team produces on-brand spots and cutdowns, completely free.</p></div>
-      <div><span>03</span><h3>Go live.</h3><p>Your brand runs on premium streaming, fully tracked and optimized by SignalForge to hit ROAS targets.</p></div>
+      <div><span>03</span><h3>Go live.</h3><p>Your brand runs on premium streaming, fully tracked and optimized by TargetLock to hit ROAS targets.</p></div>
     </div>
     <div class="day-strip" aria-label="Seven day launch strip">
       ${["Meet", "Plan", "Shoot", "Edit", "Build", "Review", "Live"].map(step => `<span>${step}</span>`).join("")}
@@ -896,7 +896,7 @@ function streamingEngine() {
   return `<section class="section engine-section">
     <div class="engine-card">
       <span>The Engine</span>
-      <h2>SignalForge: an AI engine that only spends when you are on target.</h2>
+      <h2>TargetLock: an AI engine that only spends when you are on target.</h2>
       <p>It concentrates your budget on what is driving sales and pulls it back the moment a placement stops performing. Always on, and included in everything we run.</p>
     </div>
   </section>`;
@@ -907,7 +907,7 @@ function streamingGetList() {
     "Premium streaming placements across top services",
     "Targeting from Amazon's first-party shopper data",
     "Cinema-grade creative, multiple versions, free",
-    "SignalForge ROAS protection, always on",
+    "TargetLock ROAS protection, always on",
     "Full attribution to real sales",
     "Live in one week, from a single meeting"
   ];
@@ -931,7 +931,7 @@ function streamingProofSystem() {
     ["Target", "Amazon shopper data finds the households most likely to buy."],
     ["Create", "Multiple tailored spots are produced for your brand, included."],
     ["Measure", "Amazon Marketing Cloud connects exposure to purchases."],
-    ["Optimize", "SignalForge shifts budget toward what is working."]
+    ["Optimize", "TargetLock shifts budget toward what is working."]
   ];
   return `<section class="section proof-system" id="proof">
     <div class="proof-media">
